@@ -15,7 +15,8 @@ class DatabaseSeeder extends Seeder
         $this->call(
             [
                 KriteriaModelSeeder::class,
-                AlternatifModelSeeder::class
+                AlternatifModelSeeder::class,
+                HasilEvaluasiModelSeeder::class,
             ]
         );
     }

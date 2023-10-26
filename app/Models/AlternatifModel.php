@@ -10,4 +10,8 @@ class AlternatifModel extends Model
     use HasFactory;
     protected $table = 'alternatif';
     protected $primaryKey = 'id_alternatif';
+    protected $fillable = [
+        'id_alternatif',
+        'alternatif',
+    ];
 }
