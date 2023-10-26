@@ -223,7 +223,7 @@
                         <tr>
                             <th></th>
                             @foreach (array_keys(reset($concordanceDominance)) as $kriteria)
-                                <th>K{{ $kriteria }}</th>
+                                <th>K{{ $kriteria - 1 }}</th>
                             @endforeach
                         </tr>
                     </thead>
@@ -246,7 +246,7 @@
                         <tr>
                             <th></th>
                             @foreach (array_keys(reset($discordanceDominance)) as $kriteria)
-                                <th>K{{ $kriteria }}</th>
+                                <th>K{{ $kriteria - 1 }}</th>
                             @endforeach
                         </tr>
                     </thead>
@@ -269,7 +269,7 @@
                         <tr>
                             <th></th>
                             @foreach (array_keys(reset($aggregateDominance)) as $kriteria)
-                                <th>K{{ $kriteria }}</th>
+                                <th>K{{ $kriteria - 1 }}</th>
                             @endforeach
                         </tr>
                     </thead>
