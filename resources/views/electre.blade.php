@@ -52,7 +52,7 @@
         <script>
             document.addEventListener("DOMContentLoaded", function() {
                 $.ajax({
-                    url: "{{ url('/elektre/result') }}", // Replace with the actual URL
+                    url: "{{ url('/electre/result') }}", // Replace with the actual URL
                     type: "GET",
                     success: function(response) {
                         displayResultN(response.n);
@@ -77,7 +77,7 @@
                 });
 
                 $.ajax({
-                    url: "{{ url('/elektre/alternatif') }}", // Ganti dengan URL yang sesuai
+                    url: "{{ url('/electre/alternatif') }}", // Ganti dengan URL yang sesuai
                     type: "GET",
                     success: function(response) {
                         displayalternatif(response.alternatif);
@@ -88,7 +88,7 @@
                 });
     
                 $.ajax({
-                    url: "{{ url('/elektre/kriteria') }}", // Ganti dengan URL yang sesuai
+                    url: "{{ url('/electre/kriteria') }}", // Ganti dengan URL yang sesuai
                     type: "GET",
                     success: function(response) {
                         displaykriteria(response.kriteria);

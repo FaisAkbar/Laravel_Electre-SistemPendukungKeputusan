@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', function () {
-    return view('welcome');
+    return view('electre');
 });
 
-Route::get('/elektre', [HasilEvaluasiModelController::class, 'index']);
-Route::get('/elektre/result', [HasilEvaluasiModelController::class, 'result']);
-Route::get('/elektre/alternatif', [HasilEvaluasiModelController::class, 'getAlternatives']);
-Route::get('/elektre/kriteria', [HasilEvaluasiModelController::class, 'getCriterias']);
+Route::get('/electre', [HasilEvaluasiModelController::class, 'index']);
+Route::get('/electre/result', [HasilEvaluasiModelController::class, 'result']);
+Route::get('/electre/alternatif', [HasilEvaluasiModelController::class, 'getAlternatives']);
+Route::get('/electre/kriteria', [HasilEvaluasiModelController::class, 'getCriterias']);
