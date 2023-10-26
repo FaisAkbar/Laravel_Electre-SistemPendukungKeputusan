@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Http\Controllers\AlternatifModelController;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -14,9 +16,9 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(
             [
-                KriteriaModelSeeder::class,
-                AlternatifModelSeeder::class,
-                HasilEvaluasiModelSeeder::class,
+                KriteriaSeeder::class,
+                AlternatifSeeder::class,
+                EvaluasiElektreSeeder::class,
             ]
         );
     }

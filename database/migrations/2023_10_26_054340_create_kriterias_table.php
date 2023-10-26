@@ -11,11 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('hasil_evaluasi', function (Blueprint $table) {
-            $table->smallInteger('id_alternatif', false, true);
-            $table->tinyInteger('id_kriteria', false, true);
-            $table->float('value');
-            $table->primary(['id_alternatif', 'id_kriteria']);
+        Schema::create('kriterias', function (Blueprint $table) {
+            $table->id();
+            $table->string('kriteria', 30);
+            $table->float('bobot');
+            $table->timestamps();
         });
     }
 
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('hasil_evaluasi');
+        Schema::dropIfExists('kriterias');
     }
 };
